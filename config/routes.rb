@@ -72,4 +72,5 @@ SampleApp::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  match "*", :to => "application#not_found_error"
 end
